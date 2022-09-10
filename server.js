@@ -1,9 +1,14 @@
 const express = require('express')
-const app = express()
+const server = express()
 
 
-app.get('/', (req, res) =>  res.send('hey'))
-
-app.listen(3000, () => {
-    console.log(listening)
+server.all('/', (req, res) => {
+    res.send('RUNNING')
 })
+
+function running() {
+    server.listen(3000, () => {console.log('Server is up on port ' + 3000)
+  })
+  }
+  
+  module.exports = running
