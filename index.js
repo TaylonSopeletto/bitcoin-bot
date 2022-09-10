@@ -6,7 +6,7 @@ var cron = require('node-cron');
 const server = require('./server.js')
 
 
-cron.schedule('0 0 16 * * *', () => {
+cron.schedule('0 0 17 * * *', () => {
     
     axios.get('https://www.mercadobitcoin.net/api/BTC/ticker/').then(res => {
 
