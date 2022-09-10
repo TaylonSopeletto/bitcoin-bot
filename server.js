@@ -10,6 +10,6 @@ server.all('/', (req, res) => {
 function running() {
     server.listen(port, () => {console.log('Server is up on port ' + port)
   })
-  }
+}
   
   module.exports = running

@@ -18,8 +18,8 @@ cron.schedule('* * * * *', () => {
             { name: 'BRL', value: toReal(res.data.ticker.buy) }
         )
 
-        client.login("MTAxODE2NjkzNTg5ODI5NjQ0MA.GrSLuV.klHQVtNkY94z3u7v1HjDJ5beOjG6swM3gJxgSU").then(() => {
-            client.channels.cache.get(process.env.TOKEN)?.send({ embeds: [exampleEmbed] });
+        client.login("MTAxODE2NjkzNTg5ODI5NjQ0MA.GCGsXa.f7855oT3grygNsYY5B0Lq5tfz7PNzZjFYzAElQ").then(() => {
+            client.channels.cache.get("1018182387236098168")?.send({ embeds: [exampleEmbed] });
         })
     })
 }, {
