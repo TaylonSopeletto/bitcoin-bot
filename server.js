@@ -1,5 +1,6 @@
 const express = require('express')
 const server = express()
+const serverless = require('serverless-http')
 
 const port = process.env.PORT || 3000
 
@@ -12,4 +13,4 @@ function running() {
   })
 }
   
-  module.exports = running
+module.exports.handler = serverless(server)
